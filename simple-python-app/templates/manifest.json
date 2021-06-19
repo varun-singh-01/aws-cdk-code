@@ -1,0 +1,103 @@
+{
+  "version": "12.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "SimplePythonAppStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "SimplePythonAppStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/SimplePythonAppStack/my-bucket-cdk-09/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mybucketcdk0912A08FB7",
+            "trace": [
+              "new Bucket (C:\\Users\\varun\\AppData\\Local\\Temp\\jsii-kernel-hs46TQ\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.js:521:26)",
+              "C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:8154:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:8582:24)",
+              "Kernel._create (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:8154:34)",
+              "Kernel.create (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:7895:29)",
+              "KernelHost.processRequest (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:9479:36)",
+              "KernelHost.run (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:9442:22)",
+              "Immediate._onImmediate (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:9443:46)",
+              "processImmediate (internal/timers.js:461:21)"
+            ]
+          }
+        ],
+        "/SimplePythonAppStack/BucketName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketName",
+            "trace": [
+              "C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:8154:58",
+              "Kernel._wrapSandboxCode (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:8582:24)",
+              "Kernel._create (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:8154:34)",
+              "Kernel.create (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:7895:29)",
+              "KernelHost.processRequest (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:9479:36)",
+              "KernelHost.run (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:9442:22)",
+              "Immediate._onImmediate (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:9443:46)",
+              "processImmediate (internal/timers.js:461:21)"
+            ]
+          }
+        ],
+        "/SimplePythonAppStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (C:\\Users\\varun\\AppData\\Local\\Temp\\jsii-kernel-hs46TQ\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.js:22:30)",
+              "C:\\Users\\varun\\AppData\\Local\\Temp\\jsii-kernel-hs46TQ\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:128:9",
+              "visit (C:\\Users\\varun\\AppData\\Local\\Temp\\jsii-kernel-hs46TQ\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:185:9)",
+              "visit (C:\\Users\\varun\\AppData\\Local\\Temp\\jsii-kernel-hs46TQ\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:182:9)",
+              "injectMetadataResources (C:\\Users\\varun\\AppData\\Local\\Temp\\jsii-kernel-hs46TQ\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:117:5)",
+              "Object.synthesize (C:\\Users\\varun\\AppData\\Local\\Temp\\jsii-kernel-hs46TQ\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:17:5)",
+              "App.synth (C:\\Users\\varun\\AppData\\Local\\Temp\\jsii-kernel-hs46TQ\\node_modules\\@aws-cdk\\core\\lib\\stage.js:100:41)",
+              "C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:7970:134",
+              "Kernel._wrapSandboxCode (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:8582:24)",
+              "C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:7970:107",
+              "Kernel._ensureSync (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:8563:28)",
+              "Kernel.invoke (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:7970:34)",
+              "KernelHost.processRequest (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:9479:36)",
+              "KernelHost.run (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:9442:22)",
+              "Immediate._onImmediate (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:9443:46)",
+              "processImmediate (internal/timers.js:461:21)"
+            ]
+          }
+        ],
+        "/SimplePythonAppStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (C:\\Users\\varun\\AppData\\Local\\Temp\\jsii-kernel-hs46TQ\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.js:30:35)",
+              "C:\\Users\\varun\\AppData\\Local\\Temp\\jsii-kernel-hs46TQ\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:128:9",
+              "visit (C:\\Users\\varun\\AppData\\Local\\Temp\\jsii-kernel-hs46TQ\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:185:9)",
+              "visit (C:\\Users\\varun\\AppData\\Local\\Temp\\jsii-kernel-hs46TQ\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:182:9)",
+              "injectMetadataResources (C:\\Users\\varun\\AppData\\Local\\Temp\\jsii-kernel-hs46TQ\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:117:5)",
+              "Object.synthesize (C:\\Users\\varun\\AppData\\Local\\Temp\\jsii-kernel-hs46TQ\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.js:17:5)",
+              "App.synth (C:\\Users\\varun\\AppData\\Local\\Temp\\jsii-kernel-hs46TQ\\node_modules\\@aws-cdk\\core\\lib\\stage.js:100:41)",
+              "C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:7970:134",
+              "Kernel._wrapSandboxCode (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:8582:24)",
+              "C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:7970:107",
+              "Kernel._ensureSync (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:8563:28)",
+              "Kernel.invoke (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:7970:34)",
+              "KernelHost.processRequest (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:9479:36)",
+              "KernelHost.run (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:9442:22)",
+              "Immediate._onImmediate (C:\\Users\\varun\\AppData\\Local\\Temp\\tmpcfpb7ikd\\lib\\program.js:9443:46)",
+              "processImmediate (internal/timers.js:461:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "SimplePythonAppStack"
+    }
+  }
+}
