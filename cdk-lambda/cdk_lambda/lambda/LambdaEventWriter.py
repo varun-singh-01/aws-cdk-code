@@ -16,6 +16,7 @@ dynamodb = boto3.client('dynamodb')
 def handler(event, context):
     bucket_name = (os.environ['BUCKET_NAME'])
     key = event['Records'][0]['s3']['object']['key']
+    size = event['Records'][0]['s3']['object']['size']
     image = {
         'S3Object': {
             'Bucket': bucket_name,
@@ -24,8 +25,6 @@ def handler(event, context):
     }
 
     try:
-        print("[handler] :: {}".format(key))
-
         # Write results to DynamoDB
         dynamodb.put_item(TableName=(os.environ['TABLE_NAME']),
                           Item={
