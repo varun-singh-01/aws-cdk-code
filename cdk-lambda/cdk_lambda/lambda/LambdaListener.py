@@ -25,12 +25,9 @@ def handler(event, context):
     }
 
     try:
-        # Write results to DynamoDB
-        dynamodb.put_item(TableName=(os.environ['TABLE_NAME']),
-                          Item={
-            'image_name': {'S': key}
-        }
-        )
+        # Log the event
+        print("[LambdaListenet] New key with name {} created in bucket {}".formay(
+            key, bucket_name))
 
         response = {'status': 'success', 'key': key}
         return response
